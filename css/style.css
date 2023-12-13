@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --btn_color: #e99c2e;
+    --first_head_color: #9a8e82;
+    --heads_color: #626161;
+    --font_color: #b0afae;
+    --first_section_color: #f8f9fd;
+    --overlay_color: #3b41437a;
+    --product_color: #6e5b57;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.d_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in;
+}
+
+a:hover {
+    color: var(--btn_color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--btn_color);
+    border: none;
+    transition: .2s all ease-in;
+}
+
+button:hover {
+    border: 1px solid var(--btn_color);
+    background-color: transparent;
+    color: var(--btn_color);
+}
+
+h3 {
+    font-size: 1.7rem;
+    color: var(--heads_color);
+}
+
+h5{
+    font-size: 1rem;
+    color: var(--heads_color);
+}
+
+.center {
+    text-align: center;
+}
+/***********top page**********/
+.top_page {
+    position: relative;
+    background-color: var(--first_section_color);
+    min-height: 80vh;
+}
+
+.navbar {
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.navbar span {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.colored_span {
+    color: var(--btn_color);
+}
+
+.navbar ul li {
+    padding-left: 40px;
+    text-transform: capitalize;
+}
+
+.navbar .top_icon li,
+.top_icon a {
+    padding-left: 20px;
+    color: var(--heads_color);
+    cursor: pointer;
+    line-height: 1px;
+}
+
+.top_icon li span {
+    font-size: 1rem;
+}
+
+.navbar .top_icon .fa-cart-shopping{
+   position: relative;
+}
+
+.basket {
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: var(--btn_color);
+    color: #fff;
+    font-size: 0.8rem !important;
+    text-align: center;
+    line-height: 17px;
+}
+
+.top_content {
+    justify-content: space-evenly;
+    padding: 10% 0 0 2%;
+}
+
+.top_content .top_info{
+    width: 50%;
+}
+
+.top_content img {
+    width: 33%;
+}
+
+.top_info h1 {
+    font-size: 1.5rem;
+    color: var(--first_head_color);
+    font-weight: 400;
+}
+
+.top_info h2 {
+    font-size: 2.5rem;
+    color: var(--heads_color);
+    font-weight: 500;
+}
+
+.top_info p {
+    color: var(--font_color);
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+
+.top_sale {
+    padding: 0 0 3% 7%;
+    position: relative;
+}
+
+.top_sale .line {
+    width: 40px;
+    border: 1px solid black;
+    position: absolute;
+    top: 18%;
+    left: 0;
+}
+
+.top_sale del {
+    color: var(--font_color);
+}
+
+.top_info .info_btn {
+    color: var(--btn_color);
+    background-color: transparent;
+}
+
+.top_info .fa-solid {
+    margin-right: 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}
+
+.slide {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+}
+
+.slide .circle {
+    text-align: center;
+    line-height: 16px;
+    font-size: 1rem;
+    color: var(--btn_color);
+    padding-right: 5px;
+}
+
+.slide .fa-solid {
+    border: 1px solid var(--btn_color);
+    border-radius: 50%;
+}
+/*********** End top page**********/
+/*********** popular section**********/
+.popular {
+    padding: 7% 0 3%;
+    justify-content: space-evenly;
+}
+
+.popular_product {
+    background-color: var(--first_section_color);
+    width: 20%;
+    height: 20%;
+}
+
+.popular_product h4 {
+    color: var(--product_color);
+}
+
+.popular_product p {
+    color: var(--font_color);
+}
+
+.popular_product:nth-child(2) {
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.popular_product:nth-child(1) img {
+    padding-top: 12%;
+}
+
+.popular_product:nth-child(2) img {
+    width: 23%;
+    padding: 5% 0 5%;
+}
+
+.product_content {
+    text-align: left;
+    width: 60%;
+    padding-top: 7%;
+}
+
+.product_content button {
+    height: 40px;
+    width: 140px;
+    margin-left: 2%;
+    background-color: transparent;
+    color: var(--product_color);
+    border: 1px solid var(--product_color);
+}
+
+.popular_product button:hover {
+    color: #fff;
+    background-color: var(--btn_color);
+    border: none;
+}
+
+.popular_product .colored_span::before {
+    content: "$";
+}
+/*********** End popular section**********/
+/*********** new arrivals section**********/
+.arrivals_sec h3 {
+    padding-bottom: 3%;
+}
+
+.new_arrivals {
+    justify-content: space-around;
+    padding-bottom: 8%;
+}
+
+.new_product {
+    width: 25%;
+    padding: 0 5% 3% 5%;
+}
+
+.arrival_img {
+    position: relative;
+    height: 75%;
+    width: 100%;
+    background-color: var(--first_section_color);
+    text-align: center;
+}
+
+.arrival_img img {
+    padding: 20% 0;
+}
+
+.arrival_img span {
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    color: #fff;
+    background-color: #d8924c;
+    line-height: 30px;
+    top: 5%;
+    right: 0;
+}
+
+.arrival_img .green {
+    background-color: #47d93c;
+}
+
+.arrival_text h5{
+    margin-bottom: 3%;
+}
+
+.arrival_text span {
+    font-weight: 500;
+    color: var(--product_color);
+}
+
+.arrival_text span::before {
+    content: "$";
+}
+
+/*********** End new arrivals section**********/
+/*********** unlimited sofa collection**********/
+.sofa_collection {
+    position: relative;
+    background: linear-gradient(var(--overlay_color),var(--overlay_color)),url(../images/collection/sofa-collection-banner.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+.overlay_part {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #3b4143b3;
+    width: 30%;
+    height: 100%;
+    z-index: -1;
+}
+
+.collection_content {
+    padding: 10% 0 3% 5%;
+    max-width: 38%;
+    color: #fff;
+}
+
+.sofa_collection button {
+    margin: 0 0 5% 5%;
+}
+/*********** end unlimited sofa collection**********/
+/*********** featured section **********/
+.featured_sec h3 {
+    padding: 5% 0;
+}
+
+.featured_content {
+    justify-content: space-evenly;
+    margin-bottom: 7%;
+}
+
+.feature_product img{
+    padding-bottom: 10%;
+}
+
+.fa-star {
+    color: #a9a9a9;
+}
+
+.gold {
+    color: #efce4a;
+}
+
+.feature_product .feature_review span {
+    padding-left: 4%;
+    color: var(--font_color);
+}
+
+.feature_product h5 {
+    margin: 7% 0;
+}
+
+.feature_product .price {
+    color: var(--heads_color);
+}
+
+.feature_product .price::before {
+    content: "$";
+}
+/*********** end featured section **********/
+/*********** blog section **********/
+.blog_sec h3{
+    padding-bottom: 5%
+}
+
+.blog_content {
+    justify-content: space-evenly;
+    margin: 0 0 3% 5%;
+}
+
+.blog_post {
+    width: 30%;
+    padding-bottom: 3%;
+}
+
+.blog_text span {
+    color: var(--first_head_color);
+}
+
+.blog_text p {
+    color: var(--font_color);
+}
+/*********** end blog section **********/
+/*********** client section **********/
+.client_sec {
+    background-color: var(--first_section_color);
+}
+
+.client_logo {
+    justify-content: space-evenly;
+    padding: 5% 0;
+}
+
+/*********** end client section **********/
+/*********** newsletter section **********/
+.newsletter_content {
+    justify-content: space-evenly;
+    padding: 5% 0;
+}
+
+.newsletter_part h6 {
+    font-size: 1.3rem;
+    color: var(--heads_color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.newsletter_part ul {
+    padding-left: 0;
+}
+
+.newsletter_part ul li {
+    padding-bottom: 20%;
+    text-transform: capitalize;
+}
+
+.newsletter_part a {
+    color: var(--font_color);
+}
+
+.newsletter_part a:hover {
+    color: var(--btn_color);
+}
+
+.newsletter_part p {
+    color: var(--font_color);
+    max-width: 70%;
+}
+
+.newsletter_part p::first-letter {
+    text-transform: uppercase;
+}
+
+.newsletter_part input {
+    background: #fff;
+    padding: 25px 15px;
+    outline: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    border: 0;
+}
+
+::placeholder {
+    padding-left: 3%;
+    color: var(--font_color);
+}
+/*********** end newsletter section **********/
+/*********** footer section **********/
+footer {
+    background-color: var(--first_section_color);
+}
+.social_icns {
+    padding: 3% 0 2%;
+}
+
+.social_icns i {
+    font-size: 1.3rem;
+    padding-right: 1%;
+}
+
+.social_icns a {
+    color: var(--font_color);
+}
+
+.social_icns a:hover {
+    color: var(--btn_color);
+}
+.copyright_text {
+    padding-bottom: 3%;
+}
+.copyright_text span {
+    color: var(--font_color);
+}
+
+.arrow_up {
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--btn_color);
+    color: #fff;
+    cursor: pointer;
+    line-height: 40px;
+}
+/*********** end footer section **********/
+
+@media (max-width: 1200px){
+    .blog_post {
+        width: 70%;
+        text-align: center;
+    }
+
+    .popular_product:nth-child(2) img {
+        width: 40%;
+        padding-left: 2%;
+    }
+
+    .feature_product {
+        width: 40%;
+        padding-top: 2%;
+    }
+
+    .feature_product h5 {
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .new_product {
+        width: 50%;
+    }
+
+    .feature_product {
+        padding-bottom: 5%;
+    }
+
+    .newsletter_part {
+        width: 40%;
+    }
+
+    .newsletter_part li {
+        padding-bottom: 10% !important;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .top_content .top_info {
+        width: 90%;
+    }
+
+    .top_content img {
+        width: 40%;
+        padding-bottom: 10%;
+    }
+
+    .popular_product ,
+    .popular_product:nth-child(2) {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    .blog_content {
+        margin-left: 0;
+    }
+
+    .blog_post {
+        width: 90%;
+    }
+
+    .blog_post img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px){
+    .navbar ul {
+        padding: 0;
+    }
+
+    .top_icon {
+        padding-left: 0;
+    } 
+
+    .top_sale .cash_now{
+        padding-left: 5%;
+    }
+
+    .sofa_collection{
+        width: 100%;
+    }
+
+    .collection_content {
+        min-width: 70%;
+    }
+
+    .overlay_part {
+        width: 65%;
+    }
+
+    .top_content img {
+        width: 50%;
+        padding-top: 5%;
+    }
+
+    .new_product {
+        width: 70%;
+    }
+
+    .feature_product {
+        width: 70%;
+    }
+
+    .client_logo img {
+        width: 10%;
+    }
+
+    .newsletter_part {
+        width: 50%;
+        padding-left: 10%;
+    }
+
+    .newsletter_part li {
+        padding-bottom: 5%;
+    }
+
+}
+
+    @media (max-width:450px) {
+        .top_sale .cash_now {
+            padding-left: 10%;
+        }
+
+        .top_content img {
+           padding-bottom: 20%;
+        }
+
+        .navbar .top_nav li {
+            padding-left: 20px;
+        }
+
+        .newsletter_part {
+            width: 70%;
+        }
+    }
+    
+
+
